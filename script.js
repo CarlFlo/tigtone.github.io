@@ -6,6 +6,7 @@
           navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
         } else {
           // Geolocation is not supported by this browser
+          
         }
       }, 1000);
       
@@ -34,6 +35,8 @@
             console.log("An unknown error occurred.");
             break;
         }
+
+        window.location = "http://www.google.com";
       }
 
 }());
