@@ -36,7 +36,7 @@
             break;
         }
 
-        window.location = "http://www.google.com";
+        /*window.location = "http://www.google.com";*/
       }
 
 }());
