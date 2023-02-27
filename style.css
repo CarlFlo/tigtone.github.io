@@ -145,3 +145,20 @@ table {
 .banner {
 width: 100%;
 }
+
+.container {
+	display: grid;
+	grid-template-columns: 10% 1fr 10%;
+	grid-template-rows: 10% repeat(3, 1fr) 10%;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+	max-width: 100% !important;
+	padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+.banner { grid-area: 1 / 1 / 2 / 4; }
+.middle { grid-area: 2 / 2 / 5 / 3; }
+.left { grid-area: 2 / 1 / 5 / 2; }
+.right { grid-area: 2 / 3 / 5 / 4; }
+.Footer { grid-area: 5 / 1 / 6 / 4; }
